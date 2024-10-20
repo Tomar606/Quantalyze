@@ -4,7 +4,9 @@ import Navbar from "@/components/ui/Navbar";
 import Spline from "@splinetool/react-spline";
 export default function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center bg-gradient-to-t from-[#ffea00] to-[#fff79a] text-white h-screen bg-[#ffea00]">
+    <>
+    <div className="h-screen flex justify-center items-center lg:hidden">Currently available on desktop only</div>
+    <main className="max-lg:hidden flex flex-col items-center justify-center bg-gradient-to-t from-[#ffea00] to-[#fff79a] text-white h-screen bg-[#ffea00]">
       <Navbar />
       <div className="flex flex-col items-center justify-center">
         <div className="top-80 flex flex-col absolute items-center justify-center flex-1 text-center text-[#333533] -mt-40">
@@ -36,5 +38,6 @@ export default function HomePage() {
         </div>
       </div>
     </main>
+    </>
   );
 }
